@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
+import 'screens/splash_screen.dart';
 
-void main() => runApp(const MyApp());
+const kBrand = Color(0xFF77451E);
+
+
+void main() {
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -9,20 +15,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Blog App',
-      home: const HomeScreen(),
-    );
-  }
-}
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Blog')),
-      body: const Center(child: Text('Hello Blog')),
+      home: const SplashScreen(),
+      theme: ThemeData(
+        fontFamily: 'Pretendard',
+        scaffoldBackgroundColor: Colors.white,
+      ),
     );
   }
 }

@@ -10,6 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_svg: ^2.2.3
   http: ^1.2.2
 
 dev_dependencies:
@@ -19,3 +20,19 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+  fonts:
+    - family: Pretendard
+      fonts:
+        - asset: assets/fonts/Pretendard-Regular.otf
+        - asset: assets/fonts/Pretendard-Bold.otf
+          weight: 700
+
+    - family: NotoSerifKR
+      fonts:
+        - asset: assets/fonts/NotoSerifKR-Regular.ttf
+        - asset: assets/fonts/NotoSerifKR-Bold.ttf
+          weight: 700
+
